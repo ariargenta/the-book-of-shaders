@@ -41,6 +41,7 @@ void main() {
     color += m_dist;
     color += 1.0 - step(0.02, m_dist);
     color.r += step(0.98, f_st.x) + step(0.98, f_st.y);
+    //color -= step(0.7, abs(sin(27.0 * m_dist))) * 0.5;
     
     gl_FragColor = vec4(color, 1.0);
 }
